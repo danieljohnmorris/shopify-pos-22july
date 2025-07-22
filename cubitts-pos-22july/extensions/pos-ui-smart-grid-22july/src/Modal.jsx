@@ -3,27 +3,31 @@ import React, { useEffect, useState } from 'react';
 import { Screen, useApi, reactExtension, Text } from '@shopify/ui-extensions-react/point-of-sale';
 
 const SmartGridModal = () => {
-  const api = useApi<'pos.home.modal.render'>();
+  const api = useApi();
 
-  const [authenticated, setAuthenticated] = useState<number>();
-  const [error, setError] = useState<string>();
-  const [sessionToken, setSessionToken] = useState<string>();
+  const [authenticated, setAuthenticated] = useState();
+  const [error, setError] = useState();
+  const [sessionToken, setSessionToken] = useState();
 
   useEffect(() => {
-    api.session.getSessionToken().then((token) => {
-      setSessionToken(token);
-      fetch('https://quantities-confidential-observations-steel.trycloudflare.com/api/extensions/test', {
-        method: 'GET',
-        mode: 'cors',
-        credentials: 'include',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-        },
+    api.session.getSessionToken()
+      .then((token) => {
+        setSessionToken(token);
+        return fetch('https://quantities-confidential-observations-steel.trycloudflare.com/api/extensions/test', {
+          method: 'GET',
+          mode: 'cors',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+          },
+        });
       })
-        .then((response) => setAuthenticated(response.status))
-        .catch(setError);
-    });
+      .then((response) => setAuthenticated(response.status))
+      .catch((error) => {
+        console.error('Error:', error);
+        setError(error.message || 'Failed to authenticate');
+      });
   }, []);
 
   return (
