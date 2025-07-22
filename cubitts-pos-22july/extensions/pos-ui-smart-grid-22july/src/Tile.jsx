@@ -1,21 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-import { Tile, reactExtension, useApi } from '@shopify/ui-extensions-react/point-of-sale'
+import { Tile, useApi, reactExtension } from '@shopify/ui-extensions-react/point-of-sale';
 
-const TileComponent = () => {
-  const api = useApi()
+const SmartGridTile = () => {
+  const api = useApi<'pos.home.tile.render'>();
+
   return (
     <Tile
-      title="My app"
-      subtitle="SmartGrid react Extension"
-      onPress={() => {
-        api.action.presentModal()
-      }}
+      title='Example extension'
       enabled
+      onPress={api.action.presentModal}
     />
-  )
-}
+  );
+};
 
 export default reactExtension('pos.home.tile.render', () => {
-  return <TileComponent />
+  return <SmartGridTile />
 })
