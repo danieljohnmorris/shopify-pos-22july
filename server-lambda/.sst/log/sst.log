@@ -1,0 +1,97 @@
+time=2025-07-25T13:37:19.442+01:00 level=INFO msg="checking for pulumi" path="/Users/dan/Library/Application Support/sst/bin/pulumi"
+time=2025-07-25T13:37:19.595+01:00 level=INFO msg="checking for bun" path="/Users/dan/Library/Application Support/sst/bin/bun"
+time=2025-07-25T13:37:19.601+01:00 level=INFO msg="initializing project" version=3.17.10
+time=2025-07-25T13:37:19.601+01:00 level=INFO msg="esbuild building" out=/Users/dan/code/cubitts/shopify-pos-22july/server-lambda/.sst/platform/sst.config.1753447039601.mjs
+time=2025-07-25T13:37:19.604+01:00 level=INFO msg="esbuild built" outfile=/Users/dan/code/cubitts/shopify-pos-22july/server-lambda/.sst/platform/sst.config.1753447039601.mjs
+time=2025-07-25T13:37:19.604+01:00 level=INFO msg="evaluating config"
+time=2025-07-25T13:37:19.642+01:00 level=INFO msg="config evaluated"
+time=2025-07-25T13:37:19.643+01:00 level=INFO msg="checking platform"
+time=2025-07-25T13:37:19.643+01:00 level=INFO msg="loading home"
+time=2025-07-25T13:37:20.272+01:00 level=INFO msg="aws credentials found" region=eu-west-1 profile=dev-daniel.AWSAdministratorAccess
+time=2025-07-25T13:37:20.272+01:00 level=INFO msg="fetching bootstrap"
+time=2025-07-25T13:37:20.397+01:00 level=INFO msg="found existing bootstrap" data="{\"version\":5,\"asset\":\"sst-asset-wesotwkukcmf\",\"assetEcrRegistryId\":\"307946674957\",\"assetEcrUrl\":\"307946674957.dkr.ecr.eu-west-1.amazonaws.com/sst-asset\",\"state\":\"sst-state-wesotwkukcmf\",\"appsyncHttp\":\"\",\"appsyncRealtime\":\"\"}"
+time=2025-07-25T13:37:20.398+01:00 level=INFO msg="loaded config" app=shopify-pos-lambda stage=dan
+time=2025-07-25T13:37:20.398+01:00 level=INFO msg="initializing ui" isTTY=true
+time=2025-07-25T13:37:20.398+01:00 level=INFO msg="server port assigned" port=13557
+time=2025-07-25T13:37:20.398+01:00 level=INFO msg=starting service=server
+time=2025-07-25T13:37:20.399+01:00 level=INFO msg="running stack command" service=project.run cmd=deploy
+time=2025-07-25T13:37:20.399+01:00 level=INFO msg="INFO locking app=shopify-pos-lambda stage=dan"
+time=2025-07-25T13:37:20.399+01:00 level=INFO msg="INFO getting data key=lock app=shopify-pos-lambda stage=dan"
+time=2025-07-25T13:37:20.399+01:00 level=INFO msg=server service=server addr=0.0.0.0:13557
+time=2025-07-25T13:37:20.624+01:00 level=INFO msg="INFO putting update app=shopify-pos-lambda stage=dan"
+time=2025-07-25T13:37:20.725+01:00 level=INFO msg="INFO getting passphrase app=shopify-pos-lambda stage=dan"
+time=2025-07-25T13:37:20.851+01:00 level=INFO msg="INFO pulling state app=shopify-pos-lambda stage=dan out=/Users/dan/code/cubitts/shopify-pos-22july/server-lambda/.sst/pulumi/fe67be697a7044fb2b2648e5/.pulumi/stacks/shopify-pos-lambda/dan.json"
+time=2025-07-25T13:37:21.174+01:00 level=INFO msg="got previous deployment" service=project.run updateID=fe67be697a7044fb2b2648e5
+time=2025-07-25T13:37:21.174+01:00 level=INFO msg="esbuild building" out=/Users/dan/code/cubitts/shopify-pos-22july/server-lambda/.sst/platform/sst.config.1753447040851.mjs
+time=2025-07-25T13:37:21.203+01:00 level=INFO msg="esbuild built" outfile=/Users/dan/code/cubitts/shopify-pos-22july/server-lambda/.sst/platform/sst.config.1753447040851.mjs
+time=2025-07-25T13:37:21.210+01:00 level=INFO msg="built sst.config.ts" service=project.run updateID=fe67be697a7044fb2b2648e5 to=/Users/dan/code/cubitts/shopify-pos-22july/server-lambda/.sst/platform/sst.config.1753447040851.mjs
+time=2025-07-25T13:37:21.213+01:00 level=INFO msg="tracked files" service=project.run updateID=fe67be697a7044fb2b2648e5
+time=2025-07-25T13:37:21.213+01:00 level=INFO msg="INFO getting data key=secret app=shopify-pos-lambda stage=_fallback"
+time=2025-07-25T13:37:21.213+01:00 level=INFO msg="INFO getting data key=secret app=shopify-pos-lambda stage=dan"
+time=2025-07-25T13:37:21.278+01:00 level=INFO msg="starting pulumi" service=project.run updateID=fe67be697a7044fb2b2648e5 args="[/Users/dan/Library/Application Support/sst/bin/pulumi up --yes -f --stack organization/shopify-pos-lambda/dan --non-interactive --event-log /Users/dan/code/cubitts/shopify-pos-22july/server-lambda/.sst/pulumi/fe67be697a7044fb2b2648e5/eventlog.json --config aws:defaultTags={\"tags\":{\"sst:app\":\"shopify-pos-lambda\",\"sst:stage\":\"dan\"}} --config aws:region=eu-west-1]"
+time=2025-07-25T13:37:25.613+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:26.074+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.074+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.081+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.081+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.081+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.088+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.088+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.088+01:00 level=INFO msg="building function" runtime=nodejs20.x functionID=ApiRouteOfxubvHandler
+time=2025-07-25T13:37:26.088+01:00 level=INFO msg="building function" runtime=nodejs20.x functionID=ApiRouteKsacnfHandler
+time=2025-07-25T13:37:26.089+01:00 level=INFO msg="loader info" service=runtime.node functionID=ApiRouteKsacnfHandler loader=map[]
+time=2025-07-25T13:37:26.089+01:00 level=INFO msg="running esbuild" service=runtime.node functionID=ApiRouteKsacnfHandler
+time=2025-07-25T13:37:26.089+01:00 level=INFO msg="loader info" service=runtime.node functionID=ApiRouteOfxubvHandler loader=map[]
+time=2025-07-25T13:37:26.089+01:00 level=INFO msg="running esbuild" service=runtime.node functionID=ApiRouteOfxubvHandler
+time=2025-07-25T13:37:26.089+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.089+01:00 level=INFO msg="building function" runtime=nodejs20.x functionID=ApiRouteKhbcbxHandler
+time=2025-07-25T13:37:26.090+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.090+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.090+01:00 level=INFO msg="building function" runtime=nodejs20.x functionID=ApiRouteDnvusbHandler
+time=2025-07-25T13:37:26.090+01:00 level=INFO msg="building function" runtime=nodejs20.x functionID=ApiRouteBccothHandler
+time=2025-07-25T13:37:26.090+01:00 level=INFO msg="loader info" service=runtime.node functionID=ApiRouteKhbcbxHandler loader=map[]
+time=2025-07-25T13:37:26.090+01:00 level=INFO msg="running esbuild" service=runtime.node functionID=ApiRouteKhbcbxHandler
+time=2025-07-25T13:37:26.091+01:00 level=INFO msg="loader info" service=runtime.node functionID=ApiRouteBccothHandler loader=map[]
+time=2025-07-25T13:37:26.091+01:00 level=INFO msg="running esbuild" service=runtime.node functionID=ApiRouteBccothHandler
+time=2025-07-25T13:37:26.092+01:00 level=INFO msg="esbuild finished" service=runtime.node functionID=ApiRouteKsacnfHandler
+time=2025-07-25T13:37:26.092+01:00 level=INFO msg="esbuild finished" service=runtime.node functionID=ApiRouteOfxubvHandler
+time=2025-07-25T13:37:26.092+01:00 level=INFO msg="loader info" service=runtime.node functionID=ApiRouteDnvusbHandler loader=map[]
+time=2025-07-25T13:37:26.093+01:00 level=INFO msg="running esbuild" service=runtime.node functionID=ApiRouteDnvusbHandler
+time=2025-07-25T13:37:26.093+01:00 level=INFO msg="esbuild finished" service=runtime.node functionID=ApiRouteKhbcbxHandler
+time=2025-07-25T13:37:26.093+01:00 level=INFO msg="function built" runtime=nodejs20.x functionID=ApiRouteOfxubvHandler
+time=2025-07-25T13:37:26.093+01:00 level=INFO msg="function built" runtime=nodejs20.x functionID=ApiRouteKsacnfHandler
+time=2025-07-25T13:37:26.093+01:00 level=INFO msg="function built" runtime=nodejs20.x functionID=ApiRouteKhbcbxHandler
+time=2025-07-25T13:37:26.094+01:00 level=INFO msg="esbuild finished" service=runtime.node functionID=ApiRouteBccothHandler
+time=2025-07-25T13:37:26.094+01:00 level=INFO msg="function built" runtime=nodejs20.x functionID=ApiRouteBccothHandler
+time=2025-07-25T13:37:26.095+01:00 level=INFO msg="esbuild finished" service=runtime.node functionID=ApiRouteDnvusbHandler
+time=2025-07-25T13:37:26.095+01:00 level=INFO msg="function built" runtime=nodejs20.x functionID=ApiRouteDnvusbHandler
+time=2025-07-25T13:37:26.119+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:26.185+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.226+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.267+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.308+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.361+01:00 level=INFO msg="rpc request" method=POST url=/rpc
+time=2025-07-25T13:37:26.422+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:26.610+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:27.835+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:28.541+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:33.785+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:33.982+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:34.182+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:34.378+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:34.648+01:00 level=INFO msg="INFO pushing partial state updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:34.671+01:00 level=INFO msg="pulumi exited" service=project.run updateID=fe67be697a7044fb2b2648e5 err=<nil>
+time=2025-07-25T13:37:34.671+01:00 level=INFO msg="eof and exited" service=project.run updateID=fe67be697a7044fb2b2648e5 eofs=0
+time=2025-07-25T13:37:34.671+01:00 level=INFO msg="eof and exited" service=project.run updateID=fe67be697a7044fb2b2648e5 eofs=1
+time=2025-07-25T13:37:34.671+01:00 level=INFO msg="breaking out of tail loop" service=project.run updateID=fe67be697a7044fb2b2648e5
+time=2025-07-25T13:37:34.671+01:00 level=INFO msg="parsing state" service=project.run updateID=fe67be697a7044fb2b2648e5
+time=2025-07-25T13:37:34.819+01:00 level=INFO msg="generating types" root=/Users/dan/code/cubitts/shopify-pos-22july/server-lambda
+time=2025-07-25T13:37:34.820+01:00 level=INFO msg="canceling partial" service=project.run updateID=fe67be697a7044fb2b2648e5
+time=2025-07-25T13:37:34.820+01:00 level=INFO msg="waiting for partial to exit" service=project.run updateID=fe67be697a7044fb2b2648e5
+time=2025-07-25T13:37:34.820+01:00 level=INFO msg="INFO pushing snapshot updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:34.820+01:00 level=INFO msg="INFO pushing eventlog updateID=fe67be697a7044fb2b2648e5"
+time=2025-07-25T13:37:35.114+01:00 level=INFO msg="INFO putting update app=shopify-pos-lambda stage=dan"
+time=2025-07-25T13:37:35.187+01:00 level=INFO msg="done running stack command" service=project.run updateID=fe67be697a7044fb2b2648e5 resources=59
+time=2025-07-25T13:37:35.191+01:00 level=INFO msg="INFO unlocking app=shopify-pos-lambda stage=dan"
+time=2025-07-25T13:37:35.287+01:00 level=INFO msg="shutting down server" service=server
+time=2025-07-25T13:37:35.287+01:00 level=INFO msg="server done" service=server

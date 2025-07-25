@@ -1,0 +1,192 @@
+Updating (dan):
+
+@ updating........
+ +  aws:servicediscovery:Service MyServiceCloudmapService creating (0s) 
+ +  aws:ec2:RouteTableAssociation MyVpcPublicRouteTableAssociation1 creating (0s) 
+ +  aws:servicediscovery:Service MyServiceCloudmapService created (0.34s) 
+@ updating....
+ +  aws:ec2:RouteTableAssociation MyVpcPublicRouteTableAssociation1 created (0.36s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (0s) 
+ +  aws:lb:LoadBalancer MyServiceLoadBalancer creating (0s) 
+ +  aws:ec2:RouteTableAssociation MyVpcPrivateRouteTableAssociation1 creating (0s) 
+ +  aws:ec2:RouteTableAssociation MyVpcPublicRouteTableAssociation2 creating (0s) 
+ +  aws:ec2:RouteTableAssociation MyVpcPrivateRouteTableAssociation1 created (0.35s) 
+ +  aws:ec2:RouteTableAssociation MyVpcPublicRouteTableAssociation2 created (0.42s) 
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) #0 building with "hopeful_nobel" instance using docker-container driver
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) #1 [internal] load build definition from Dockerfile
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) #1 transferring dockerfile: 507B done
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) #1 DONE 0.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) #2 [internal] load metadata for docker.io/library/node:20-alpine
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) #2 ...
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) #3 [auth] library/node:pull token for registry-1.docker.io
+ +  docker-build:index:Image MyServiceImageMyService creating (1s) #3 DONE 0.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #2 [internal] load metadata for docker.io/library/node:20-alpine
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #2 DONE 1.4s
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #4 [internal] load .dockerignore
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #4 transferring context: 88B done
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #4 DONE 0.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #5 [internal] load build context
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #5 DONE 0.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #6 [1/5] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #6 resolve docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799 done
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #6 DONE 0.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (2s) #7 [auth] sharing credentials for 307946674957.dkr.ecr.eu-west-1.amazonaws.com
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #7 DONE 0.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #8 importing cache manifest from 307946674957.dkr.ecr.eu-west-1.amazonaws.com/sst-asset:MyService-cache
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #8 ERROR: failed to configure registry cache importer: 307946674957.dkr.ecr.eu-west-1.amazonaws.com/sst-asset:MyService-cache: not found
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #6 [1/5] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #6 sha256:a9e48ad1219d4d11c6456a8db0fd5c11af46242d52edf84e17ab84a7bfd93809 0B / 445B 0.2s
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #6 sha256:54225bd601967a0aa669ec9be621c24d8eeac874b698d55874018070898685c2 0B / 1.26MB 0.2s
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 0B / 42.99MB 0.2s
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #6 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 0B / 3.80MB 0.2s
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #6 sha256:a9e48ad1219d4d11c6456a8db0fd5c11af46242d52edf84e17ab84a7bfd93809 445B / 445B 0.3s done
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (3s) #6 sha256:54225bd601967a0aa669ec9be621c24d8eeac874b698d55874018070898685c2 1.26MB / 1.26MB 0.7s done
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #6 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 1.05MB / 3.80MB 0.8s
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #6 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 2.10MB / 3.80MB 0.9s
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #6 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 3.80MB / 3.80MB 1.0s done
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #6 extracting sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #6 extracting sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 0.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #6 ...
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #5 [internal] load build context
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #5 transferring context: 200.20MB 1.4s done
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #5 DONE 1.5s
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #6 [1/5] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+ +  docker-build:index:Image MyServiceImageMyService creating (4s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 3.15MB / 42.99MB 1.7s
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (5s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 6.29MB / 42.99MB 2.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (5s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 9.44MB / 42.99MB 2.3s
+ +  docker-build:index:Image MyServiceImageMyService creating (5s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 12.58MB / 42.99MB 2.6s
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (5s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 16.78MB / 42.99MB 2.9s
+ +  docker-build:index:Image MyServiceImageMyService creating (6s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 19.92MB / 42.99MB 3.2s
+ +  docker-build:index:Image MyServiceImageMyService creating (6s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 23.07MB / 42.99MB 3.5s
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (6s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 26.21MB / 42.99MB 3.8s
+ +  docker-build:index:Image MyServiceImageMyService creating (7s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 29.36MB / 42.99MB 4.1s
+ +  docker-build:index:Image MyServiceImageMyService creating (7s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 32.51MB / 42.99MB 4.4s
+ +  docker-build:index:Image MyServiceImageMyService creating (7s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 36.70MB / 42.99MB 4.7s
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (8s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 39.85MB / 42.99MB 5.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (8s) #6 sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 42.99MB / 42.99MB 5.2s done
+ +  docker-build:index:Image MyServiceImageMyService creating (8s) #6 extracting sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (8s) #6 extracting sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 0.6s done
+ +  docker-build:index:Image MyServiceImageMyService creating (8s) #6 DONE 5.8s
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #6 [1/5] FROM docker.io/library/node:20-alpine@sha256:df02558528d3d3d0d621f112e232611aecfee7cbc654f6b375765f72bb262799
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #6 extracting sha256:54225bd601967a0aa669ec9be621c24d8eeac874b698d55874018070898685c2 0.0s done
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #6 extracting sha256:a9e48ad1219d4d11c6456a8db0fd5c11af46242d52edf84e17ab84a7bfd93809 done
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #6 DONE 5.9s
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #9 [2/5] WORKDIR /app
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #9 DONE 0.3s
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #10 [3/5] COPY package*.json ./
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #10 DONE 0.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (9s) #11 [4/5] RUN npm ci --only=production
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (10s) #11 0.709 npm warn config only Use `--omit=dev` to omit dev dependencies from the install.
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (11s) #11 2.332 npm warn deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+@ updating........
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.775 
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.775 added 148 packages, and audited 149 packages in 6s
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.775 
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.775 36 packages are looking for funding
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.775   run `npm fund` for details
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.778 
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.778 found 0 vulnerabilities
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.780 npm notice
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.780 npm notice New major version of npm available! 10.8.2 -> 11.5.1
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.780 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.5.1
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.780 npm notice To update run: npm install -g npm@11.5.1
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 6.780 npm notice
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #11 DONE 7.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (16s) #12 [5/5] COPY . .
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (17s) #12 DONE 1.0s
+ +  docker-build:index:Image MyServiceImageMyService creating (17s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (17s) #13 exporting to image
+ +  docker-build:index:Image MyServiceImageMyService creating (17s) #13 exporting layers
+@ updating.........
+ +  docker-build:index:Image MyServiceImageMyService creating (23s) #13 exporting layers 6.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (23s) #13 exporting manifest sha256:f2b614a84d46a199d8e88076cf26d04cac930f708fe26dde1a72fb1487a78962
+ +  docker-build:index:Image MyServiceImageMyService creating (23s) #13 exporting manifest sha256:f2b614a84d46a199d8e88076cf26d04cac930f708fe26dde1a72fb1487a78962 done
+ +  docker-build:index:Image MyServiceImageMyService creating (23s) #13 exporting config sha256:e32c6f996c66ac4070f4bb829461f151fed220bf58a35826d3fdc547b0d72e04 done
+ +  docker-build:index:Image MyServiceImageMyService creating (23s) #13 pushing layers
+@ updating....................
+ +  docker-build:index:Image MyServiceImageMyService creating (40s) #13 pushing layers 17.3s done
+ +  docker-build:index:Image MyServiceImageMyService creating (40s) #13 pushing manifest for 307946674957.dkr.ecr.eu-west-1.amazonaws.com/sst-asset:MyService@sha256:f2b614a84d46a199d8e88076cf26d04cac930f708fe26dde1a72fb1487a78962
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #13 pushing manifest for 307946674957.dkr.ecr.eu-west-1.amazonaws.com/sst-asset:MyService@sha256:f2b614a84d46a199d8e88076cf26d04cac930f708fe26dde1a72fb1487a78962 0.3s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #13 DONE 23.7s
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 exporting cache to registry
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 preparing build cache for export
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:0cfb2fc6a34a2f9d290bcecd5106560e40f25b1d2dc3f1f21a0cc121e5b63aff 0.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:1f99770414c794e19e2c5f6742a73f94718aea7c1a9ccd5b0197d7f9a5fdef8b 0.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:54225bd601967a0aa669ec9be621c24d8eeac874b698d55874018070898685c2
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:54225bd601967a0aa669ec9be621c24d8eeac874b698d55874018070898685c2 0.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:83fa824a0743f4a8c3fc7aa10b597f92f354ca76f6e987a3fa4ca2e8d8ab786d 0.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:8c59d92d6fc9f01af4aaa86824be72b74bd4d940c4c46aa95d9710bfa46c975e 0.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 0.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:a9e48ad1219d4d11c6456a8db0fd5c11af46242d52edf84e17ab84a7bfd93809
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:a9e48ad1219d4d11c6456a8db0fd5c11af46242d52edf84e17ab84a7bfd93809 0.1s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing layer sha256:b9dcd39699d38b2a948064863d842369d2d8b87ccb536fa44a35aeec8d4ad660 0.0s done
+ +  docker-build:index:Image MyServiceImageMyService creating (41s) #14 writing config sha256:2cc95c2bb1e98a45fa9ef734318cff423c247608907debb0ca6960420cc917dd
+@ updating....
+ +  docker-build:index:Image MyServiceImageMyService creating (42s) #14 writing config sha256:2cc95c2bb1e98a45fa9ef734318cff423c247608907debb0ca6960420cc917dd 0.4s done
+ +  docker-build:index:Image MyServiceImageMyService creating (42s) #14 writing cache image manifest sha256:12cb77e5c8b14f52db022d535ab49e7656c012eed17cfd27ce0eee4e2373266d
+ +  docker-build:index:Image MyServiceImageMyService creating (42s) #14 preparing build cache for export 1.2s done
+ +  docker-build:index:Image MyServiceImageMyService creating (42s) #14 writing cache image manifest sha256:12cb77e5c8b14f52db022d535ab49e7656c012eed17cfd27ce0eee4e2373266d 0.3s done
+ +  docker-build:index:Image MyServiceImageMyService creating (42s) #14 DONE 1.2s
+ +  docker-build:index:Image MyServiceImageMyService creating (42s) 
+ +  docker-build:index:Image MyServiceImageMyService creating (42s) #15 resolving provenance for metadata file
+ +  docker-build:index:Image MyServiceImageMyService creating (42s) 
+ +  docker-build:index:Image MyServiceImageMyService created (42s) 
+ +  aws:ecs:TaskDefinition MyServiceTask creating (0s) 
+ +  aws:ecs:TaskDefinition MyServiceTask created (0.24s) 
+ +  aws:ecs:Service MyServiceService creating (0s) 
+@ updating.........................................................................................................................................................
+ +  aws:lb:LoadBalancer MyServiceLoadBalancer created (192s) 
+ +  aws:lb:Listener MyServiceListenerHTTP80 creating (0s) 
+ +  aws:lb:Listener MyServiceListenerHTTP80 created (0.34s) 
+@ updating............
+ +  aws:ecs:Service MyServiceService created (158s) 
+ +  aws:appautoscaling:Target MyServiceAutoScalingTarget creating (0s) 
+@ updating....
+ +  aws:appautoscaling:Target MyServiceAutoScalingTarget created (0.75s) 
+ +  aws:appautoscaling:Policy MyServiceAutoScalingCpuPolicy creating (0s) 
+ +  aws:appautoscaling:Policy MyServiceAutoScalingMemoryPolicy creating (0s) 
+ +  aws:appautoscaling:Policy MyServiceAutoScalingCpuPolicy created (0.44s) 
+ +  aws:appautoscaling:Policy MyServiceAutoScalingMemoryPolicy created (0.51s) 
+    pulumi:pulumi:Stack shopify-pos-server-dan  
+Outputs:
+  + _protect: false
+  + service : "http://MyServiceLoadBa-mnckbmha-1300716139.eu-west-1.elb.amazonaws.com"
+
+Resources:
+    + 12 created
+    29 unchanged
+
+Duration: 3m28s
+

@@ -26,7 +26,9 @@ const SmartGridModal = () => {
     
     console.log('Try :', token ? '***TOKEN_PRESENT***' : 'NO_TOKEN');
 
-    const api_service_url = "http://MyServiceLoadBa-mnckbmha-1300716139.eu-west-1.elb.amazonaws.com/health";
+    // Fargate: http://myserviceloadba-mnckbmha-1300716139.eu-west-1.elb.amazonaws.com/health 
+    // Lambda: https://zs5afs7ig6.execute-api.eu-west-1.amazonaws.com/health
+    const api_service_url = "https://zs5afs7ig6.execute-api.eu-west-1.amazonaws.com/health";
     console.log('API service URL:', api_service_url);
 
     console.log('🌐 Making fetch request to cloudflare tunnel... ', api_service_url);

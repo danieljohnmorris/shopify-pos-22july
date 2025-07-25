@@ -1,0 +1,123 @@
+Updating (dan):
+
+@ updating.......
+ +  aws:apigatewayv2:Api ApiApi creating (0s) 
+ ++ aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerCode creating replacement (0s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerCode creating replacement (0s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerSourcemap0 creating replacement (0s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerSourcemap0 creating replacement (0s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteBccothHandlerSourcemap0 creating replacement (0s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerCode creating replacement (0s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerSourcemap0 creating replacement (0s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteBccothHandlerCode creating replacement (0s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerSourcemap0 creating replacement (0s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerCode creating replacement (0s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerSourcemap0 created replacement (0.19s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerCode created replacement (0.20s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerSourcemap0 replacing (0s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerSourcemap0 replaced (0.00s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerSourcemap0 created replacement (0.19s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerCode created replacement (0.20s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerCode replaced (0.00s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteBccothHandlerSourcemap0 created replacement (0.16s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerSourcemap0 replacing (0s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerSourcemap0 replaced (0.00s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerSourcemap0 created replacement (0.16s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerCode replaced (0.00s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteBccothHandlerCode created replacement (0.15s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteBccothHandlerSourcemap0 replacing (0s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteBccothHandlerSourcemap0 replaced (0.00s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerSourcemap0 replacing (0s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerSourcemap0 replaced (0.00s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerSourcemap0 created replacement (0.16s)[retain] [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerCode created replacement (0.18s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteBccothHandlerCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteBccothHandlerCode replaced (0.00s) [diff: ~key,source]
+ ++ aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerCode created replacement (0.16s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerSourcemap0 replacing (0s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerSourcemap0 replaced (0.00s)[retain] [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerCode replaced (0.00s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerCode replacing (0s) [diff: ~key,source]
+ +- aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerCode replaced (0.00s) [diff: ~key,source]
+@ updating....
+ +  aws:apigatewayv2:Api ApiApi created (1s) 
+ +  aws:apigatewayv2:Stage ApiStage creating (0s) 
+ +  aws:lambda:Function ApiRouteBccothHandlerFunction creating (0s) 
+ +  aws:lambda:Function ApiRouteKsacnfHandlerFunction creating (0s) 
+ +  aws:lambda:Function ApiRouteOfxubvHandlerFunction creating (0s) 
+ +  aws:lambda:Function ApiRouteKhbcbxHandlerFunction creating (0s) 
+ +  aws:lambda:Function ApiRouteDnvusbHandlerFunction creating (0s) 
+@ updating....
+ +  aws:apigatewayv2:Stage ApiStage created (0.76s) 
+@ updating........
+ +  aws:lambda:Function ApiRouteDnvusbHandlerFunction created (5s) 
+ +  aws:lambda:Function ApiRouteOfxubvHandlerFunction created (5s) 
+ +  aws:lambda:Function ApiRouteBccothHandlerFunction created (5s) 
+ +  aws:lambda:Permission ApiRouteDnvusbPermissions creating (0s) 
+ +  aws:lambda:Permission ApiRouteOfxubvPermissions creating (0s) 
+ +  aws:lambda:Function ApiRouteKsacnfHandlerFunction created (5s) 
+ +  aws:lambda:Permission ApiRouteBccothPermissions creating (0s) 
+ +  aws:lambda:Function ApiRouteKhbcbxHandlerFunction created (5s) 
+ +  aws:lambda:Permission ApiRouteKsacnfPermissions creating (0s) 
+ +  aws:lambda:Permission ApiRouteKhbcbxPermissions creating (0s) 
+ +  aws:lambda:Permission ApiRouteDnvusbPermissions created (0.14s) 
+ +  aws:lambda:Permission ApiRouteOfxubvPermissions created (0.14s) 
+ +  aws:apigatewayv2:Integration ApiRouteDnvusbIntegration creating (0s) 
+ +  aws:apigatewayv2:Integration ApiRouteOfxubvIntegration creating (0s) 
+ +  aws:lambda:Permission ApiRouteBccothPermissions created (0.15s) 
+ +  aws:apigatewayv2:Integration ApiRouteBccothIntegration creating (0s) 
+ +  aws:lambda:Permission ApiRouteKhbcbxPermissions created (0.14s) 
+ +  aws:apigatewayv2:Integration ApiRouteKhbcbxIntegration creating (0s) 
+ +  aws:lambda:Permission ApiRouteKsacnfPermissions created (0.22s) 
+ +  aws:apigatewayv2:Integration ApiRouteKsacnfIntegration creating (0s) 
+@ updating....
+ +  aws:apigatewayv2:Integration ApiRouteDnvusbIntegration created (0.21s) 
+ +  aws:apigatewayv2:Route ApiRouteDnvusbRoute creating (0s) 
+ +  aws:apigatewayv2:Integration ApiRouteKhbcbxIntegration created (0.18s) 
+ +  aws:apigatewayv2:Integration ApiRouteBccothIntegration created (0.21s) 
+ +  aws:apigatewayv2:Integration ApiRouteOfxubvIntegration created (0.24s) 
+ +  aws:apigatewayv2:Route ApiRouteKhbcbxRoute creating (0s) 
+ +  aws:apigatewayv2:Route ApiRouteBccothRoute creating (0s) 
+ +  aws:apigatewayv2:Route ApiRouteOfxubvRoute creating (0s) 
+ +  aws:apigatewayv2:Integration ApiRouteKsacnfIntegration created (0.21s) 
+ +  aws:apigatewayv2:Route ApiRouteKsacnfRoute creating (0s) 
+ +  aws:apigatewayv2:Route ApiRouteDnvusbRoute created (0.25s) 
+ +  aws:apigatewayv2:Route ApiRouteKhbcbxRoute created (0.25s) 
+ +  aws:apigatewayv2:Route ApiRouteOfxubvRoute created (0.25s) 
+ +  aws:apigatewayv2:Route ApiRouteBccothRoute created (0.28s) 
+ +  aws:apigatewayv2:Route ApiRouteKsacnfRoute created (0.25s) 
+ -- aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerSourcemap0 deleting original (0s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerSourcemap0 deleting original (0s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerSourcemap0 deleting original (0s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerSourcemap0 deleting original (0s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteBccothHandlerCode deleting original (0s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteBccothHandlerSourcemap0 deleting original (0s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerSourcemap0 deleted original (0.04s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerSourcemap0 deleted original (0.04s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerSourcemap0 deleted original (0.05s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerSourcemap0 deleted original (0.08s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteBccothHandlerSourcemap0 deleted original (0.09s)[retain] [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteDnvusbHandlerCode deleted original (0.11s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteOfxubvHandlerCode deleted original (0.11s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteKhbcbxHandlerCode deleted original (0.11s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteKsacnfHandlerCode deleted original (0.14s) [diff: ~key,source]
+ -- aws:s3:BucketObjectv2 ApiRouteBccothHandlerCode deleted original (0.16s) [diff: ~key,source]
+    pulumi:pulumi:Stack shopify-pos-lambda-dan  
+Outputs:
+  + _protect: false
+  + api     : "https://zs5afs7ig6.execute-api.eu-west-1.amazonaws.com"
+
+Resources:
+    + 22 created
+    +-10 replaced
+    32 changes. 25 unchanged
+
+Duration: 13s
+

@@ -1,0 +1,24 @@
+{
+  "name": "server-lambda",
+  "version": "1.0.0",
+  "description": "Express server for Lambda with SST ApiGatewayV2",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "deploy": "AWS_PROFILE=dev-daniel.AWSAdministratorAccess npx sst deploy",
+    "remove": "AWS_PROFILE=dev-daniel.AWSAdministratorAccess npx sst remove",
+    "dev:sst": "AWS_PROFILE=dev-daniel.AWSAdministratorAccess npx sst dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sst": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
