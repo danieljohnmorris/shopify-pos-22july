@@ -73,12 +73,10 @@ const SmartGridModal = () => {
   console.log('🎨 Rendering component with state - authenticated:', authenticated, 'error:', error);
   
   return (
-    <Screen name='Home' title='Authentication example'>
+    <Screen name='Home' title='Smart Grid example'>
       <Text>Authenticated: {authenticated ? 'true' : 'false'}</Text>
-      
-      <Text>Error: {error}</Text>
-      
       <Text>Data: {data ? JSON.stringify(data, null, 2) : 'No data'}</Text>
+      <Text>Error: {error}</Text>
     </Screen>
   );
 }
