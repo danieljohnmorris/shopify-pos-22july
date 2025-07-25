@@ -12,6 +12,7 @@ const SmartGridModal = () => {
     // https://visit-new-types-choir.trycloudflare.com/
     // dont use localhost
     // always get new session token
+    const load = async () => {
     try {
     const token = await api.session.getSessionToken()
       const res = await fetch('https://streams-extra-cafe-catalyst.trycloudflare.com', {
@@ -34,6 +35,8 @@ const SmartGridModal = () => {
         api.toast.show(`Error in request ${e}`, 5000)
       console.error(e);
     }
+    }
+    load()
   }, []);
 
   return (
