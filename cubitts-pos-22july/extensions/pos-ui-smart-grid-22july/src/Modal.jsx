@@ -15,7 +15,7 @@ const SmartGridModal = () => {
     const load = async () => {
     try {
     const token = await api.session.getSessionToken()
-      const res = await fetch('https://streams-extra-cafe-catalyst.trycloudflare.com', {
+      const res = await fetch('https://st-verse-qualified-da.trycloudflare.com', {
         method: 'GET',
         mode: 'cors',
         credentials: 'include',
@@ -41,7 +41,7 @@ const SmartGridModal = () => {
 
   return (
     <Screen name='Home' title='Authentication example'>
-      <Text>Authenticated: {authenticated}</Text>
+      <Text>Authenticated: {authenticated ? 'true' : 'false'}</Text>
       <Text>Error: {error}</Text>
     </Screen>
   );
