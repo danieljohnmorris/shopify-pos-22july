@@ -9,6 +9,7 @@ const SmartGridModal = () => {
 
   const [authenticated, setAuthenticated] = useState();
   const [error, setError] = useState();
+  const [data, setData] = useState();
   
   console.log('🔧 Initial state - authenticated:', authenticated, 'error:', error);
 
@@ -51,10 +52,11 @@ const SmartGridModal = () => {
       }
 
       console.log('📦 Parsing JSON response...');
-      const data = await res.json();
-      console.log('✅ Authentication data received:', data);
-      setAuthenticated(data);
-      console.log('🔄 State updated - authenticated set to:', data);
+      const responseData = await res.json();
+      console.log('✅ Authentication data received:', responseData);
+      setAuthenticated(true);
+      setData(responseData);
+      console.log('🔄 State updated - authenticated: true, data:', responseData);
     } catch (e) {
         console.error('💥 Error in authentication request:', e);
         console.error('💥 Error stack:', e.stack);
@@ -75,6 +77,8 @@ const SmartGridModal = () => {
       <Text>Authenticated: {authenticated ? 'true' : 'false'}</Text>
       
       <Text>Error: {error}</Text>
+      
+      <Text>Data: {data ? JSON.stringify(data, null, 2) : 'No data'}</Text>
     </Screen>
   );
 }
