@@ -3,6 +3,13 @@ const cors = require('cors');
 const app = express();
 const PORT = 9000;
 
+// Request logging middleware
+app.use((req, res, next) => {
+  const timestamp = new Date().toISOString();
+  console.log(`[${timestamp}] ${req.method} ${req.url} - IP: ${req.ip || req.connection.remoteAddress}`);
+  next();
+});
+
 // CORS middleware
 app.use(cors());
 

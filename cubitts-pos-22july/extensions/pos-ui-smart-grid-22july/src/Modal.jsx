@@ -11,10 +11,11 @@ const SmartGridModal = () => {
 
   useEffect(() => {
     // https://visit-new-types-choir.trycloudflare.com/
-    // http://localhost:9000
+    // dont use localhost
+    // always get new session token
     api.session.getSessionToken().then((token) => {
       setSessionToken(token);
-      fetch('https://visit-new-types-choir.trycloudflare.com/', {
+      fetch('https://streams-extra-cafe-catalyst.trycloudflare.com', {
         method: 'GET',
         mode: 'cors',
         credentials: 'include',
@@ -30,7 +31,7 @@ const SmartGridModal = () => {
 
   return (
     <Screen name='Home' title='Authentication example'>
-      <Text>Token: {sessionToken}</Text>
+      {/* <Text>Token: {sessionToken}</Text> */}
       <Text>Authenticated: {authenticated}</Text>
       <Text>Error: {error}</Text>
     </Screen>
