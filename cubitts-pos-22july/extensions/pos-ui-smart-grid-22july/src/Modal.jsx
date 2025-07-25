@@ -7,15 +7,15 @@ const SmartGridModal = () => {
 
   const [authenticated, setAuthenticated] = useState();
   const [error, setError] = useState();
-  const [sessionToken, setSessionToken] = useState();
 
   useEffect(() => {
     // https://visit-new-types-choir.trycloudflare.com/
     // dont use localhost
     // always get new session token
-    api.session.getSessionToken().then((token) => {
-      setSessionToken(token);
-      fetch('https://streams-extra-cafe-catalyst.trycloudflare.com', {
+    const load = async () => {
+    try {
+    const token = await api.session.getSessionToken()
+      const res = await fetch('https://streams-extra-cafe-catalyst.trycloudflare.com', {
         method: 'GET',
         mode: 'cors',
         credentials: 'include',
@@ -24,14 +24,23 @@ const SmartGridModal = () => {
           Authorization: `Bearer ${token}`,
         },
       })
-        .then((response) => setAuthenticated(response.status))
-        .catch(setError);
-    });
+      if (!res.ok) {
+        api.toast.show(`Bad request ${res.status}`, 5000)
+        throw new Error(`Error ${url}: ${res.status}`)
+      }
+
+      const data = await res.json();
+      setAuthenticated(data)
+    } catch (e) {
+        api.toast.show(`Error in request ${e}`, 5000)
+      console.error(e);
+    }
+    }
+    load()
   }, []);
 
   return (
     <Screen name='Home' title='Authentication example'>
-      {/* <Text>Token: {sessionToken}</Text> */}
       <Text>Authenticated: {authenticated}</Text>
       <Text>Error: {error}</Text>
     </Screen>
