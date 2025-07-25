@@ -19,3 +19,6 @@ scopes = "read_orders,read_customers,read_products"
 
 [auth]
 redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[pos]
+embedded = true

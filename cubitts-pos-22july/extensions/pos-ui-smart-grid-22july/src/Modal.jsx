@@ -10,24 +10,22 @@ const SmartGridModal = () => {
   const [sessionToken, setSessionToken] = useState();
 
   useEffect(() => {
-    api.session.getSessionToken()
-      .then((token) => {
-        setSessionToken(token);
-        return fetch('https://quantities-confidential-observations-steel.trycloudflare.com/api/extensions/test', {
-          method: 'GET',
-          mode: 'cors',
-          credentials: 'include',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${token}`,
-          },
-        });
+    // https://visit-new-types-choir.trycloudflare.com/
+    // http://localhost:9000
+    api.session.getSessionToken().then((token) => {
+      setSessionToken(token);
+      fetch('https://visit-new-types-choir.trycloudflare.com/', {
+        method: 'GET',
+        mode: 'cors',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
       })
-      .then((response) => setAuthenticated(response.status))
-      .catch((error) => {
-        console.error('Error:', error);
-        setError(error.message || 'Failed to authenticate');
-      });
+        .then((response) => setAuthenticated(response.status))
+        .catch(setError);
+    });
   }, []);
 
   return (
