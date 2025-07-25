@@ -24,8 +24,13 @@ const SmartGridModal = () => {
     const token = await api.session.getSessionToken();
     console.log('✅ Session token obtained:', token ? '***TOKEN_PRESENT***' : 'NO_TOKEN');
     
-    console.log('🌐 Making fetch request to cloudflare tunnel...');
-      const res = await fetch('https://st-verse-qualified-da.trycloudflare.com', {
+    console.log('Try :', token ? '***TOKEN_PRESENT***' : 'NO_TOKEN');
+
+    const api_service_url = "http://MyServiceLoadBa-mnckbmha-1300716139.eu-west-1.elb.amazonaws.com/health";
+    console.log('API service URL:', api_service_url);
+
+    console.log('🌐 Making fetch request to cloudflare tunnel... ', api_service_url);
+      const res = await fetch(api_service_url, {
         method: 'GET',
         mode: 'cors',
         credentials: 'include',
@@ -66,6 +71,7 @@ const SmartGridModal = () => {
   return (
     <Screen name='Home' title='Authentication example'>
       <Text>Authenticated: {authenticated ? 'true' : 'false'}</Text>
+      
       <Text>Error: {error}</Text>
     </Screen>
   );

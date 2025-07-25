@@ -1,0 +1,14 @@
+{
+  "name": "cubitts-pos-deployment",
+  "version": "1.0.0",
+  "description": "SST deployment for Cubitts POS server",
+  "type": "module",
+  "scripts": {
+    "deploy": "sst deploy",
+    "dev": "sst dev",
+    "remove": "sst remove"
+  },
+  "devDependencies": {
+    "sst": "^3.0.0"
+  }
+}
